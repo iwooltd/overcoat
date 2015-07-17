@@ -94,7 +94,20 @@ static BOOL OVCTextOnlyContainsDigits(NSString *text) {
     // Go through tokens
     OVCURLMatcher *node = self;
     for (NSString *token in tokens) {
-        NSArray *childrenNodes = node.children;
+        
+        NSMutableArray *childrenNodes = [[NSMutableArray alloc] init];
+        
+        for (OVCURLMatcher *currentNode in node.children) {
+            if (![currentNode.text isEqualToString:@"*"]) {
+                [childrenNodes insertObject:currentNode atIndex:0];
+            } else
+            {
+                [childrenNodes addObject:currentNode];
+            }
+        }
+        
+        
+        
         if (!childrenNodes) {
             break;
         }
