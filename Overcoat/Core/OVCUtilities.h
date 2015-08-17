@@ -23,7 +23,7 @@
 #import <Foundation/Foundation.h>
 #import <Mantle/Mantle.h>
 
-#if __has_include("MTLTransformerErrorHandling.h")  // This is a new header comes with Mantle 2.0
+#if __has_include(<Mantle/MTLTransformerErrorHandling.h>)  // This is a new header comes with Mantle 2.0
 #define OVERCOAT_USING_MANTLE_2 1
 #else
 #define OVERCOAT_USING_MANTLE_2 0

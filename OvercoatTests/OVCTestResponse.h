@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Guillermo Gonzalez. All rights reserved.
 //
 
-#import <Overcoat/Overcoat.h>
+@import Overcoat;
 
 @interface OVCTestResponse : OVCResponse
 

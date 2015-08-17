@@ -1,0 +1,4 @@
+github "taiheng/afnetworking" "carthage+2.5.4"
+github "mantle/mantle" "2.0.4"
+github "alisoftware/ohhttpstubs" "4.2.0"
+github "reactivecocoa/reactivecocoa" "v2.5"
